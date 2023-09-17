@@ -11,7 +11,7 @@ const body = document.getElementById('body');
 const Logout = document.getElementById("Logout");
 Logout.addEventListener("click", ()=>{
   sessionStorage.setItem('LoggedIn', 'false');
-  window.location.href="/Index/index.html";
+  window.location.href="index.html";
 }
 )  
 
