@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="/Index/index.css">
+    <meta charset="UTF-8">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+HK:wght@600&family=Noto+Sans+TC:wght@600&family=Noto+Serif+TC:wght@700&display=swap');
+       
+        body {
+            font-family: 'Noto Sans TC', 'Noto Sans HK', sans-serif;
+            background-color:#1C1A16;
+            margin: 0;
+        }
+
+        .topic {
+            font-size: 36px;
+            color: #8b6014;
+            margin-top: 81px;
+            background-color: #e9e2d4;
+            margin-left: auto;
+            margin-right: auto;
+            width: 520px;
+            text-align: center;
+
+        } 
+        
+
+        .intr2 {
+            font-size: 24px;
+            line-height: 1.5;
+            margin-left: 6%;
+            margin-top: 30%;
+            color: #FFC764;
+        }
+
+        .intr2 p{
+            float: left;
+            margin: 10px;
+            align-items: center;
+            padding: 0.5%;
+            border-radius: 10%;
+            border: 2px solid  #e9e2d4;;
+    
+        }
+
+        .ticketbtn {
+            background-color: #FFC764;
+            color: #1b1e30;
+            border: none;
+            padding: 5px 2px;
+            font-size: 32px;
+            font-weight: bold;
+            width: 300px;
+            cursor: pointer;
+            box-shadow: 2px 5px #e9e2d4;
+            border: 2px solid #8b6014;
+            margin-top: 69px;
+        }
+
+        .ticketbtn:hover {
+            background-color: #1b1e30;
+            color: #FFC764;
+            border: 2px solid #5e4c23;
+        }
+
+        .cover {
+            width: 300px;
+            border: 2px solid #ffffff;
+            box-shadow: 3px 5px #5e4c23;    
+            padding-top: 12px;
+            padding-right: 12px;
+        }
+
+        .cover2{      
+            box-shadow: -13px 15px #e9e2d4;
+        }
+    
+        .right {
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            right: 10%;
+            top: 21%;
+        }
+
+        .icons{
+            display: flex;
+            margin-top: 39px;
+            color: #e9e2d4;
+        }
+
+        .icons ion-icon:hover{
+            color: rgb(201, 72, 72);
+        }
+        
+        .utube{
+            position: absolute;
+            left: 6.5%
+        }
+
+        #Seating{
+            width:  530px ;
+            height:  480px;
+            position: absolute;
+            right: 60px;
+            top: 760px;
+    
+        }
+        
+    </style>    
+
+</head>
+<body>
+    <nav class="navbar">
+        <img src="MDARS.png" style="float: left; width: 49px; margin-left: 4px;" id="Me">
+        <a href="index.html">首頁</a>
+        <a href="Movie.html">電影</a>
+        <a href="TicketOrder.html">訂票頁面</a>
+        <a href="AboutUs.html">關於我們</a>
+    </nav>
+
+      
+    <h1 class="topic">海鷗來過的房間</h1>
+
+    <iframe class="utube" width="1100" height="580" src="https://www.youtube.com/embed/3I_1UMqeRvI?si=gLN4LSSiOMJ3LmLK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <div class="right">
+        <div class="cover2"><img src="MDARS.png" class="cover" ></div>
+        <button class="ticketbtn">BUY</button>
+        <div class="icons">
+            <ion-icon name="heart-outline" style="width: 100%;height: 60px;"></ion-icon>
+            <ion-icon name="share-social-outline"style="width: 100%;height: 60px;"></ion-icon>
+        </div> 
+    </div>
+
+    <br>
+    <div class="left">       
+        <div class="intr2">
+            <p>動畫</p>      
+            <p>英語語言</p>
+            <p>中文字幕</p>
+            <p>140 分鐘片長</p>
+            <p>IIA級(香港)</p>
+            <p>B級(澳門)</p>
+            <p>2023年6月1日(四)上映</p>
+        </div>
+    </div>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
