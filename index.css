@@ -114,7 +114,7 @@ body{
   background: #c7bead;
   width: 380px;
   height: 150px;
-  position: sticky; 
+  position: fixed; 
   top: 50px;
   margin-left: 80%;
   font-family: 'Courier New', Courier, monospace;
@@ -187,7 +187,7 @@ body{
       flex-wrap: wrap;
       justify-content:center;
       background-color: #e9e2d4;
-      position: relative;
+      position: absolute;
       top: 820px;
     }
 
