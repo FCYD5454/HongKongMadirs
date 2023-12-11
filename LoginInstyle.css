@@ -4,23 +4,48 @@ body {
 
 h1 {		
 	text-align: center;
-	max-width: 430px;
+	max-width: 494px;
 	margin: auto;
+	position: relative;
+	top: 139px;
 	color:rgb(235, 204, 121); 
 	padding-bottom: 5px;
 	background-color:#1b1e30;
-	border-radius: 50px;
-	
+	border-radius: 39px;
+	border:4px double #f0b46b;
+	z-index: 0;
+}
+
+#Rc{
+	position: absolute;
+	width: 1px;
+	background-color: #f0b46b;
+	right: 0%;
+	box-shadow:  0px 0px 1000px 550px #2d3145;
+	z-index: -1;
+	bottom: 0%;
+}
+
+#Lc{
+	position: absolute;
+	width: 1px;
+	background-color: #f0b46b;
+	left: 0%;
+	box-shadow:  0px 0px 1000px 550px #2d3145;
+	z-index: -1;
+	bottom: 0%;
 }
 
 form {
 	background-color: #f0b46b;
 	border-radius: 5px;
-	box-shadow: 0 0 10px rgba(240, 180, 107, 1);
-	margin: 250px auto;
-	max-width: 500px;
+	box-shadow: 0 0 8px 1px rgba(240, 180, 107, 1);
+	margin: 269px auto;
+	max-width: 560px;
 	padding: 20px;
-	width: 250%;
+	z-index: 1;
+	position: relative;
+	border:7px double #645987;
 }
 
 label {
@@ -30,13 +55,18 @@ label {
 
 input[type="text"],
 input[type="password"] {
-	border-radius: 3px;
+	border-radius: 7px;
 	border: 1px solid #ccc;
 	box-sizing: border-box;
 	display: block;
 	margin-bottom: 20px;
 	padding: 10px;
 	width: 100%;
+}
+
+#forgot{
+	float: right;
+	color: #2d3145;
 }
 
 button {
@@ -50,10 +80,18 @@ button {
 	width: 100%;
 }
 
-#error-message {
-	color: red;
-	margin: auto;
-	text-align: center;
+.button{
+	position: relative;
+	top: 10px;
+	left: 247px;
+	color: #2d3145;
+}
 
+#fail-Login {
+	color: rgb(214, 86, 86);
+	position: relative;
+	text-align: center;
+	bottom: 180px;
+	
 }
 
