@@ -38,35 +38,32 @@ function islogo(){
 logo.addEventListener('click', islogo);
 
 const searchInput = document.getElementById('searchInput');
-const searchButton = document.getElementById('searchButton');
 const deleteButton = document.getElementById('deleteButton');
 const container = document.querySelector('.container');
-const ban = document.getElementById("banner");
 
-searchButton.addEventListener('click', performSearch);
-searchInput.addEventListener('keyup', function (event) {
-  if (event.key === 'Enter') {
-    performSearch();
-  }
-});
-
-function performSearch() {
-  const query = searchInput.value.toLowerCase();
-  const cssItems = container.getElementsByClassName('css');
-
-  for (let i = 0; i < cssItems.length; i++) {
-    const item = cssItems[i];
-    const title = item.getElementsByTagName('h3')[0].textContent.toLowerCase();
-
-    if (title.includes(query)) {
-      item.style.display = 'block';  
-    } else {
-      item.style.display = 'none';
+searchInput.addEventListener('input', ()=>{
+  const cssItems = container.getElementsByClassName("css");
+  var i;
+  for(i=0; i< cssItems.length; i++){
+    const movies = cssItems[i];
+    const movie = movies.getElementsByTagName("h3")[0].textContent.toLowerCase();
+    if( movie.includes(searchInput.value.toLowerCase())){
+      movies.style.display = "block";
+    }else{
+      movies.style.display = "none";
     }
   }
 }
+);
 
-deleteButton.addEventListener('click', function () {
+deleteButton.addEventListener('click', ()=>{
   searchInput.value = '';
 }
 )
+
+const ban = document.getElementById("banner");
+ban.addEventListener("click",()=>{
+  if(confirm("Oh! You also SPIDER-MAN lovers? ♡♡♡")){  
+    window.location.href="SPIDER-MAN.html";
+  };
+})
