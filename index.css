@@ -59,15 +59,21 @@ body{
       border-radius: 10px ;
       background-color:#1b1e30;
       transition-timing-function: ease-in-out;
-      transition-duration: 0.4s;
+      transition-duration: 0.8s;
       transition-delay: 0s;
       box-shadow: 2px 2px #5e4c23;
       border: 1px solid #c7bead;
     }
 .searchbar:hover{
-    background-color: #5e4c23;
+    background-color: #7e6637;
  
     }
+
+.searchbar input:hover::placeholder{
+  color:#1c1e2a;
+  font-weight: bold;
+  font-size: large;
+}
 
 #searchInput{
       background: transparent;
@@ -79,8 +85,8 @@ body{
       color: #FFC764;
       margin-top: 2px;
     }
-#searchInput:active{
-    width: 280px;
+#searchInput:hover{
+    width: 390px;
 }
 #searchButton{ 
       float: left;
