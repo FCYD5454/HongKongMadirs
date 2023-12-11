@@ -1,8 +1,8 @@
 const form = document.querySelector('form');
 
-form.addEventListener('submit', function(event) {
+form.addEventListener('submit', function(e) {
 
-	event.preventDefault();
+	e.preventDefault();
 
 	const username = form.username.value.trim();
 	const email = form.email.value.trim();
