@@ -1,7 +1,7 @@
 const loginForm = document.getElementById('login-form');
-const errorMessage = document.getElementById('error-message');
+const FailMessage = document.getElementById('fail-Login');
 
-loginForm.addEventListener('submit', function(event) {
+loginForm.addEventListener('submit', (event)=> {
 	event.preventDefault();
 
 	const username = loginForm.username.value;
@@ -13,7 +13,7 @@ loginForm.addEventListener('submit', function(event) {
 		window.location.href="index.html";
    		//localStorage.setItem('hideButton', username);
 	} else {
-		errorMessage.textContent = '用戶名或密碼錯誤。';
+		FailMessage.textContent = '用戶名或密碼錯誤。';
 	}
 });
 
